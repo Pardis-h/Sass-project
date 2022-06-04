@@ -1,0 +1,99 @@
+// Nav
+.menu {
+    padding: 40px 0;
+    min-height: 90px;
+    .navbar ul {
+
+        li{
+            margin-left: 30px;
+            a{
+                color: $font-color;
+                transition: color .5s ease;
+                position: relative;
+                &:hover{
+                    color: $font-color-hover;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $font-color-hover;
+                    transition: width .5s ease;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    right: 50%;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $font-color-hover;
+                    transition: width .5s ease;
+                }
+                &:hover::before, &:hover::after{
+                    width: 50%;
+                }
+        } 
+    }
+    }  
+    .burger{
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        i{
+            font-size: 24px;
+        }
+    }
+    .menu-burger{
+        display: none;
+        position: absolute;
+        width: 95%;
+        right: 16px;
+        background-color: #fff;
+        top: 105px;
+        padding: 10px;
+        box-shadow: 1px 1px 3px 0px #bbbbbbbf;
+        border-radius: 3px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            li {
+                margin-bottom: 10px;
+                a{
+                    color: $font-color;
+                    transition: color .5s ease;
+                    position: relative;
+                    &:hover{
+                        color: $font-color-hover;
+                    }
+                } 
+            }
+        }
+    }
+    .social-media a{
+        color: #4d4d4d;
+        margin-right: 15px;
+        i{
+            font-size: 18px;
+            transition: color .5s ease;
+        }
+        .fa-instagram:hover{
+            color: orangered;
+        }
+        .fa-telegram-plane:hover{
+            color: #2796f0;
+        }
+        .fa-facebook-f:hover{
+            color: #0d2bd8;
+        }
+        .fa-twitter:hover{
+            color: #4a93ff;
+        }
+    }
+}

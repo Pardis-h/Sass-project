@@ -1,0 +1,35 @@
+// Responsive
+@media screen and (max-width:768px) {
+    .menu {
+        .navbar{
+            display: none;
+        }
+        .burger{
+            display: block;
+        }
+    }
+    header .row{
+        flex-direction: column-reverse;
+    }
+    .course-group{
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+        .course{
+            max-width: 400px;
+        }
+    }
+    .paths-group .path{
+        flex-direction: column!important;
+    }
+    .topics .topics-group{
+        min-width: 100%;
+    }
+    footer .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        .side-1 ,.side-2{
+            width: 250px;
+        }
+    }
+}

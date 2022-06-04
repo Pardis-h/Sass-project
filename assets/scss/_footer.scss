@@ -1,0 +1,81 @@
+// Footer
+footer {
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+    .footer{
+        justify-content: space-between;
+        padding: 30px 0;
+        margin-bottom: 0;
+        &>div ul li{
+            display: block;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        .footer-title{
+            font-size: 18px;
+            font-weight: normal;
+            margin: 20px 0;
+        }
+        .side-1{
+            flex-basis: 30%;
+            i{
+                margin-left: 10px;
+                vertical-align: -1px;
+
+            }
+        }
+        .side-2{
+            flex-basis: 25%;
+            margin-top: 10px;
+            a{
+                color: #fff;
+                transition:all .5s ease;
+                &:hover{
+                    color: #ffff62;
+                }
+            }
+        }
+        .side-3{
+            align-self: center;
+            flex-basis: 45%;
+            h6{
+                color: #ffff62;
+                font-size: 16px;
+                margin-bottom: 15px;
+                font-weight: normal;
+            }
+            form{
+                position: relative;
+                input{
+                    width: 100%;
+                    padding: 8px 10px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: none;
+                }
+                button{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 25%;
+                    padding: 8px 10px;
+                    border-radius: 5px 0 0 5px;
+                    border: none;
+                    transition: .5s ease;
+                    &:focus,&:hover{
+                        background-color: #ffff62;
+                    }
+                }
+            }
+        }
+    }
+    .copy-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: rgb(53, 53, 53);
+        font-size: 12px;
+    }
+}

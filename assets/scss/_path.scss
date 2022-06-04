@@ -1,0 +1,26 @@
+ //path section
+ .paths-group{
+    .path:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .path{
+        margin-top: 80px;
+        align-items: center;
+        .right-side{
+           flex-basis: 55%;
+        }
+        .left-side{
+           flex-basis: 45%;
+           padding-right: 15px;
+           h2{
+               margin-bottom: 20px;
+               color: $font-color;
+           }
+           p{
+               color: #808080;
+               line-height: 2;
+           }
+        }
+    }
+}
